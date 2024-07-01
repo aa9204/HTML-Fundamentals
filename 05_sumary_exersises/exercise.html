@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>HTML Form</title>
+    <script>
+  
+      // The following JavaScript function is able to modify the text inside
+      // the HTML tags <h1> and </h1>. The HTML element is identified with its
+      // id "text_on_screen".
+      
+      function change_text()
+      {
+         var text_element = document.getElementById( "text_on_screen" ) ;
+      
+         if ( text_element.innerHTML == "Monday" )
+         {
+            text_element.innerHTML = "Tuesday" ;
+         }
+         else if (text_element.innerHTML == "Tuesday")
+         {
+            text_element.innerHTML = "Wednesday" ;
+         }
+         else if (text_element.innerHTML == "Wednesday")
+         {
+            text_element.innerHTML = "Thursday" ;
+         }
+         else if (text_element.innerHTML == "Thursday")
+         {
+            text_element.innerHTML = "Friday" ;
+         }
+         else if (text_element.innerHTML == "Friday")
+         {
+            text_element.innerHTML = "Saturday" ;
+         }
+         else if (text_element.innerHTML == "Saturday")
+         {
+            text_element.innerHTML = "Sunday" ;
+         }
+         else if (text_element.innerHTML == "Sunday")
+         {
+            text_element.innerHTML = "Monday" ;
+         }
+        }
+
+        function change_month()
+      {
+         var text_element = document.getElementById( "other_text_on_screen" ) ;
+      
+         if ( text_element.innerHTML == "January" )
+         {
+            text_element.innerHTML = "February" ;
+         }
+         else if (text_element.innerHTML == "February")
+         {
+            text_element.innerHTML = "March" ;
+         }
+         else if (text_element.innerHTML == "March")
+         {
+            text_element.innerHTML = "April" ;
+         }
+         else if (text_element.innerHTML == "April")
+         {
+            text_element.innerHTML = "May" ;
+         }
+         else if (text_element.innerHTML == "May")
+         {
+            text_element.innerHTML = "June" ;
+         }
+         else if (text_element.innerHTML == "June")
+         {
+            text_element.innerHTML = "July" ;
+         }
+         else if (text_element.innerHTML == "July")
+         {
+            text_element.innerHTML = "August" ;
+         }
+         else if (text_element.innerHTML == "August")
+         {
+            text_element.innerHTML = "September" ;
+         }
+         else if (text_element.innerHTML == "September")
+         {
+            text_element.innerHTML = "October" ;
+         }
+         else if (text_element.innerHTML == "October")
+         {
+            text_element.innerHTML = "November" ;
+         
+          }
+          else if (text_element.innerHTML == "November")
+         {
+            text_element.innerHTML = "December" ;
+         }
+         else if (text_element.innerHTML == "December")
+         {
+            text_element.innerHTML = "January" ;
+         }
+        }
+
+      </script>
+  </head>
+  <body class="background">
+    <h1 id=text_on_screen class=centered>Monday</h1>
+    <br>
+    <h1 id="other_text_on_screen" class="centered">January</h1>
+    <div class="centered">
+      <button class="button" onclick="change_text()">Change Day</button>
+      <button class="button" onclick="change_month()">Change Month</button>
+     </div>
+
+  </body>
+</html>

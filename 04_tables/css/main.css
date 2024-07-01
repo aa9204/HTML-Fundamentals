@@ -1,0 +1,16 @@
+/* your style rules go here */
+tr.align {
+    vertical-align: sub
+}
+
+tr.center {
+    text-align:center
+}
+
+td.red {
+    color:red
+}
+
+td.blue {
+    color:blue
+}
